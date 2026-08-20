@@ -394,7 +394,13 @@ img {
     border-radius: 20px; 
     text-decoration: none; 
 } 
-.talk1,.talk2
+#paymentMethod
+{
+    font-size: 20px; 
+    color: green; 
+
+}
+.talk1,.talk2,.talk0
 {
     font-size: 20px; 
     margin-left: 30px; 

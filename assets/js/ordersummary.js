@@ -123,3 +123,7 @@ document.addEventListener("click", (event) => {
     }
 
 });
+
+const payment = sessionStorage.getItem("paymentMethod");
+
+document.querySelector("#paymentMethod").textContent = payment;

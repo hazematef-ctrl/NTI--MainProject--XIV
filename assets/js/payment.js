@@ -51,3 +51,9 @@ document.addEventListener("click", (event) => {
     }
 
 });
+
+document.querySelectorAll('input[name="payment"]').forEach(radio => {
+    radio.addEventListener("change", () => {
+        sessionStorage.setItem("paymentMethod", radio.value);
+    });
+});
