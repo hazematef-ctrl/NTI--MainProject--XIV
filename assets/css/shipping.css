@@ -92,7 +92,7 @@ img {
     height: auto;
 }
 .num {
-    padding-left: 50px !important;
+    padding-left: 70px !important;
     margin-right: -10px;
     
 }
@@ -437,7 +437,7 @@ a
 
 .total-price-header
 {
-    padding-left: 30px;
+    padding-left: 40px;
     font-size: 30px;
     font-weight: bold;
 }
