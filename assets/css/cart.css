@@ -469,12 +469,12 @@ h2
 
     .quantity{
         font-size: 24px;
-        padding: 5px 10px;
+        padding: 5px;
     }
 
     .num{
         font-size: 48px;
-        padding: 5px 10px;
+        padding: 5px;
     }
 
     .positive, .negative {
