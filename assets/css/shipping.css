@@ -156,7 +156,7 @@ img {
         margin-right: 0;   
         box-sizing: border-box;
     }
-
+    
     .payment-paragraph {
         display: flex;
         justify-content: space-between;
@@ -808,7 +808,7 @@ h2
     .name, .type, .dollar, .product-price {
         font-size: 16px;
     }
-
+    
     .quantity {
         font-size: 24px;
         padding: 5px 10px;
@@ -823,5 +823,9 @@ h2
     .total-price-header-price
     {
         font-size: 16px;
+    }
+    .num{
+        font-size: 24px;
+        margin-left: -65px !important;
     }
 }

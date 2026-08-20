@@ -679,31 +679,76 @@ h2
     }
 
     .product-image {
-        margin-left:20px;
-        width: 70px;
-        height: 70px;
+        margin-left:-10px;
+        width: 50px;
+        height: 50px;
     }
 
-    .name, .type, .dollar, .product-price {
+    .name
+    {
+    font-size: 12px;
+    margin-left:-8px;
+
+    } 
+    .type
+    {
+        font-size: 16px;
+    } 
+    .dollar{
+        font-size: 16px;
+    } 
+    .product-price {
         font-size: 16px;
     }
 
     .quantity {
         font-size: 24px;
         padding: 5px 10px;
+        
     }
 
-    .positive, .negative {
+    .positive  {
         font-size: 28px;
+        margin-left:0px;
+
+    }
+    .negative {
+        font-size: 28px;
+        margin-right:-10px;
     }
 
-    .num,
-    .total-price-header,
-    .product-price-total-price,
-    .items {
+    .num
+    {
+        font-size: 24px;
+        margin-left:-20px;
+
+    }
+    .total-price-header
+    {
+        font-size: 24px;
+        margin-left:-20px;
+
+    }
+    .product-price-total-price
+    {
+        font-size: 24px;
+        margin-left:-10px;
+
+
+    }
+    items {
         font-size: 16px;
     }
     .dollarr{
-        font-size: 16px;
+        font-size: 24px;
+    }
+    .productshr{
+        margin-left:5px;
+    }
+    .size-size
+    {
+        font-weight: bolder;
+        font-size: 30px;
+        margin-left:-30px;
     }
 }
