@@ -31,7 +31,7 @@ form.addEventListener("submit", function (m) {
         message.className = "success";
 
         setTimeout(function () {
-        window.location.href = "../../index.html";
+        window.location.href = "../index.html";
         }, 1000);
     }
 
