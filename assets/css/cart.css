@@ -344,8 +344,12 @@ h2
     .size-buttons {
     gap: 60px;
     font-size: 32px;
-    margin-left: 20px;
-}
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    }
 
     .size-buttons label {
         font-size: 32px;
@@ -353,7 +357,9 @@ h2
 
     .size-size-word {
         font-size: 32px;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -417,7 +423,10 @@ h2
     .size-buttons {
     gap: 40px;
     font-size: 26px;
-    margin-left: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
     }
 
     .size-buttons label {
@@ -426,7 +435,9 @@ h2
 
     .size-size-word {
         font-size: 26px;
-        margin-left: 15px;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 }
 
@@ -456,8 +467,13 @@ h2
         font-size: 16px;
     }
 
-    .quantity, .num {
+    .quantity{
         font-size: 24px;
+        padding: 5px 10px;
+    }
+
+    .num{
+        font-size: 48px;
         padding: 5px 10px;
     }
 
@@ -467,9 +483,12 @@ h2
     .size-buttons {
     gap: 20px;
     font-size: 20px;
-    margin-left: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     }
 
     .size-buttons label {
@@ -477,8 +496,9 @@ h2
     }
 
     .size-size-word {
+        width: 100%;
         font-size: 20px;
-        margin-left: 10px;
-        text-align: center;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 }
