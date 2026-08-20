@@ -1,0 +1,197 @@
+a {
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.checkout-button,
+.home-button,
+.done {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.checkout-button:hover,
+.home-button:hover,
+.done:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.15);
+}
+
+.checkout-button:active,
+.home-button:active,
+.done:active {
+    transform: translateY(-1px);
+    filter: brightness(0.92);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.arrow-paragraph {
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.arrow:hover .arrow-paragraph {
+    transform: translateX(-6px);
+    color: gray;
+}
+.btn1,
+.btn2,
+.btn3 {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    opacity: 0.7;
+}
+
+.product-properities {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product-properities:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.product-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+.positive,
+.negative {
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.positive:hover {
+    transform: scale(1.25);
+    color: green;
+}
+
+.negative:hover {
+    transform: scale(1.25);
+    color: red;
+}
+
+.positive:active,
+.negative:active {
+    transform: scale(0.9);
+}
+
+.quantity {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quantity:hover {
+    border-color: black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.×-button {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.×-button:hover {
+    transform: rotate(90deg) scale(1.2);
+    color: red;
+}
+
+.email-input,
+.phone-input,
+.first-name,
+.last-name,
+.country-input,
+.state-region,
+.adress,
+.postal-code,
+.city,
+.card-number,
+.card-owner-name,
+.expiry-date,
+.cvv {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.email-input:hover,
+.phone-input:hover,
+.first-name:hover,
+.last-name:hover,
+.country-input:hover,
+.state-region:hover,
+.adress:hover,
+.postal-code:hover,
+.city:hover,
+.card-number:hover,
+.card-owner-name:hover,
+.expiry-date:hover,
+.cvv:hover {
+    border-color: #888;
+}
+
+.email-input:focus,
+.phone-input:focus,
+.first-name:focus,
+.last-name:focus,
+.country-input:focus,
+.state-region:focus,
+.adress:focus,
+.postal-code:focus,
+.city:focus,
+.card-number:focus,
+.card-owner-name:focus,
+.expiry-date:focus,
+.cvv:focus {
+    border-color: black;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+
+.shipping,
+.payment,
+.order-summary,
+.order-summary-button {
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shipping:hover,
+.payment:hover,
+.order-summary:hover,
+.order-summary-button:hover {
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart,
+.your-order,.your-order-payment {
+    animation: fadeSlideUp 0.5s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}

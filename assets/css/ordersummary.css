@@ -1,0 +1,71 @@
+.your-order {
+    width: 769px;
+    min-height: 600px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 10px;  
+}
+.selected-size
+{
+    margin-left:30px;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+.size-size
+{
+    font-weight: bolder;
+    font-size: 40px;
+}
+h3{
+    margin-left: 30px;
+    color: green;
+}
+ .your-order {
+        width: 90%;
+        max-width: 43px;
+        min-height: 20px;
+        height: auto;
+        margin: 30px auto 0;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+.done
+{ 
+    color:white; 
+    width: 285px; 
+    height: 60px; 
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    margin-left: -480px; 
+    background-color: green; 
+    border-radius: 20px; 
+    text-decoration: none; 
+} 
+.buttons
+{
+    margin-left: 480px; 
+
+}
+@media (max-width: 768px) {
+    .your-order {
+        width: 90%;
+        max-width: 450px;
+        min-height: 550px;
+        height: auto;
+        margin: 30px auto 0;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .your-order {
+        width: 100%;
+        padding: 20px; 
+    }
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Geomini:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>XIV | STORE</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+    <div class="home">
+        <!-- Navbar-->
+        <div class="nav-bar">
+            <header class="custom-navbar py-3 px-4 px-md-5">
+
+                <div class="d-flex justify-content-between">
+                    <!-- Top Row Navigation Links, Logo, User Actions -->
+                    <div class="d-flex align-items-center justify-content-between">
+
+                        <!-- Left Section: Menu Toggle & Main Links -->
+                        <div class="d-flex align-items-center gap-4">
+                            <button id="menuToggle" class="btn p-0 border-0 text-dark me-2 d-md-none" type="button"
+                                aria-label="Toggle Menu">
+
+                                <i class="bi bi-list fs-3"></i>
+
+                            </button>
+                            <ul class="nav d-none d-md-flex align-items-center gap-4 m-0 p-0 list-unstyled">
+                                <li><a href="index.html" class="nav-link-custom active">Home</a></li>
+                                <li><a href="./pages/product.html" class="nav-link-custom">Collections</a></li>
+                                <li><a href="#new" class="nav-link-custom">New</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Center Section: Logo -->
+                    <div class="">
+                        <a href="index.html">
+                            <img src="assets/images/nav-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Right Section: Wishlist, Cart, Profile Icons -->
+                    <div class="d-flex align-items-center  gap-1 gap-md-3">
+                        <!-- Wishlist -->
+                        <a href="./pages/favourite.html" class="icon-circle btn-wishlist d-none d-sm-flex">
+                            <i class="bi bi-heart"></i>
+                        </a>
+
+                        <!-- Cart Button -->
+                        <div class="cart-pill-wrapper d-flex align-items-center">
+                            <span class="cart-text d-none d-md-inline-block me-1">Cart</span>
+                            <a href="pages/cart.html" class="icon-circle bg-white text-dark border border-dark">
+                                <i class="bi bi-bag"></i>
+                                <i class="cart-counter">0</i>
+                            </a>
+                        </div>
+                        
+                        <!-- User Profile -->
+                        <a href="pages/auth.html" class="icon-circle bg-dark text-white">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+        <!-- Categories & Search Bar -->
+        <div class="d-flex flex-column  mt-2 Categories">
+            <!-- Categories Links -->
+            <div class="mb-3 mb-md-0">
+                <ul class="list-unstyled category-links m-0 p-0">
+                    <li><a href="#men">MEN</a></li>
+                    <li><a href="#women">WOMEN</a></li>
+                    <li><a href="#kids">KIDS</a></li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="col-md-4 col-11 ">
+                <div class="search-box position-relative">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                    <input type="text" class="form-control rounded-1 border-0 ps-5 pe-3 py-2" placeholder="Search">
+                </div>
+            </div>
+        </div>
+
+        </header>
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
+
+        <aside class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-header">
+                <img src="assets/images/nav-logo.png" alt="XIV">
+
+                <button id="closeMenu" class="menu-close">
+
+                </button>
+            </div>
+
+            <nav class="mobile-nav">
+                <a href="./index.html">Home</a>
+                <a href="./pages/product.html">Collections</a>
+                <a href="#new">New</a>
+            </nav>
+
+
+        </aside>
+
+        <!-- End Of Nav Bar -->
+
+        <div class="new-collection">
+
+            <!-- Content -->
+            <div class="new-collection-con">
+                <div>
+                    <h1 class="new-collection-h">
+                        NEW<br>COLLECTION
+                    </h1>
+
+                    <p class="text-muted fs-5">Summer <br> 2026</p>
+                </div>
+
+                <div class="new-collection-go">
+                    <a href="./pages/product.html" class="btn btn-shop go-shop">
+                        Go To Shop
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <div>
+                        <button id="prevBtn" class="btn btn-arrow">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <button id="nextBtn" class="btn btn-arrow">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Images -->
+            <div class="images-slider" id="images-slider">
+
+                <div class="image-card">
+                    <img id="image1" src="assets/images/img1.png" alt="Product">
+                </div>
+
+                <div class="image-card">
+                    <img id="image2" src="assets/images/img2.png" alt="Product">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Section -2 -->
+
+        <!-- Section - 2 -->
+        <section class="new-products-section" id="new">
+
+            <!-- Section Header -->
+            <div class="new-products-header">
+
+                <div class="d-flex align-items-center gap-2">
+                    <h2>NEW THIS WEEK</h2>
+
+                    <span id="newProductsCount" class="products-count">
+                        (0)
+                    </span>
+                </div>
+
+                <a href="./pages/product.html" class="see-all">
+                    SEE ALL
+                </a>
+
+            </div>
+
+
+            <!-- Products Viewport -->
+            <div class="products-viewport">
+
+                <div id="productsTrack" class="products-track">
+                    <!-- Products generated by JavaScript -->
+                </div>
+
+            </div>
+
+            <div class="products-navigation">
+
+                <button id="productsPrevBtn" class="products-arrow" disabled>
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+
+                <button id="productsNextBtn" class="products-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+     Section - 3
+     Collections
+========================================= -->
+
+        <section class="collections-section">
+
+            <!-- Section Heading -->
+            <div class="collections-heading">
+                <h2>
+                    XIV<br>
+                    COLLECTIONS<br>
+                    25-26
+                </h2>
+            </div>
+
+
+            <!-- Filters / Sort -->
+            <div class="collections-toolbar">
+
+                <!-- Categories -->
+                <div class="collection-filters">
+
+                    <button class="filter-btn active" data-category="all">
+                        (ALL)
+                    </button>
+
+                    <button class="filter-btn" data-category="men" id="men">
+                        Men
+                    </button>
+
+                    <button class="filter-btn" data-category="women" id="women">
+                        Women
+                    </button>
+
+                    <button class="filter-btn" data-category="kids" id="kids">
+                        KID
+                    </button>
+
+                </div>
+
+
+                <!-- Filter & Sort -->
+                <div class="collection-options">
+
+                    <div class="filter-option">
+                        <button id="filterToggle">
+                            Filters(+)
+                        </button>
+                    </div>
+
+
+                    <div class="sort-option">
+
+                        <button id="sortToggle">
+                            Sorts(-)
+                        </button>
+
+                        <div id="sortOptions" class="sort-options">
+
+                            <button data-sort="low">
+                                Less to more
+                            </button>
+
+                            <button data-sort="high">
+                                More to Less
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Products -->
+            <div id="collectionGrid" class="collection-grid">
+            </div>
+
+
+            <!-- More -->
+            <button id="loadMoreBtn" class="load-more-btn">
+
+                More
+
+                <i class="bi bi-chevron-down"></i>
+
+            </button>
+
+        </section>
+
+
+        <!-- =========================================
+     Section - 4
+     Our Approach
+========================================= -->
+
+        <section class="approach-section">
+
+            <!-- Heading -->
+            <div class="approach-header">
+
+                <h2>
+                    OUR APPROACH TO FASHION DESIGN
+                </h2>
+
+                <p>
+                    at elegant vogue, we blend creativity with craftsmanship to create
+                    <br class="desktop-break">
+                    fashion that transcends trends and stands the test of time each
+                    <br class="desktop-break">
+                    design is meticulously crafted, ensuring the highest quality
+                    <br class="desktop-break">
+                    exquisite finish
+                </p>
+
+            </div>
+
+
+            <!-- Images -->
+            <div class="approach-gallery">
+
+                <div class="approach-image image-one">
+                    <img src="assets/images/img9.png" alt="Fashion collection">
+                </div>
+
+                <div class="approach-image image-two">
+                    <img src="assets/images/img12.png" alt="Fashion collection">
+                </div>
+
+                <div class="approach-image image-three">
+                    <img src="assets/images/img1.png" alt="Fashion collection">
+                </div>
+
+                <div class="approach-image image-four">
+                    <img src="assets/images/img10.png" alt="Fashion collection">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+     Footer
+========================================= -->
+
+        <footer class="site-footer">
+
+            <div class="footer-inner">
+
+                <!-- Info -->
+                <div class="footer-info">
+
+                    <span>INFO</span>
+
+                    <a href="./pages/checkout.html">PRICING</a>
+                    <a href="./pages/about.html">ABOUT</a>
+                    <a href="#">CONTACTS</a>
+
+                    <div class="footer-languages">
+
+                        <span>LANGUAGES</span>
+
+                        <a href="#">ENG</a>
+                        <a href="#">ESP</a>
+                        <a href="#">SVE</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Logo -->
+                <div class="footer-brand">
+
+                    <img src="assets/images/nav-logo.png" alt="">
+
+                </div>
+
+
+
+
+
+                <!-- Communication -->
+                <div class="footer-communication">
+
+                    <span>
+                        Next-field communication
+                    </span>
+
+                    <div></div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/sync.js"></script>
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/cartt.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>

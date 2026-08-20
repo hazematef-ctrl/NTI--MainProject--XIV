@@ -1,0 +1,25 @@
+.btn1
+{
+    color: gray;
+    text-decoration: none;
+}
+.btn1:hover {
+    color: black;
+}
+.btn2
+{
+    color: black;
+    text-decoration: none;
+}
+.btn2:hover {
+    color: black;
+}
+.btn3
+{
+    color: gray;
+    text-decoration: none;
+
+}
+.btn3:hover {
+    color: black;
+}

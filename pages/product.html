@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Geomini:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="nav-bar">
+            <header class="custom-navbar py-3 px-4 px-md-5">
+
+                <div class="d-flex justify-content-between">
+                    <!-- Top Row Navigation Links, Logo, User Actions -->
+                    <div class="d-flex align-items-center justify-content-between">
+
+                        <!-- Left Section: Menu Toggle & Main Links -->
+                        <div class="d-flex align-items-center gap-4">
+                            <button id="menuToggle" class="btn p-0 border-0 text-dark me-2 d-md-none" type="button"
+                                aria-label="Toggle Menu">
+
+                                <i class="bi bi-list fs-3"></i>
+
+                            </button>
+                            <ul class="nav d-none d-md-flex align-items-center gap-4 m-0 p-0 list-unstyled">
+                                <li><a href="../index.html" class="nav-link-custom active">Home</a></li>
+                                <li><a href="product.html" class="nav-link-custom">Collections</a></li>
+                                <li><a href="../index.html#new" class="nav-link-custom">New</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- Center Section: Logo -->
+                    <div class="">
+                        <a href="../index.html">
+                            <img src="../assets/images/nav-logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- Right Section: Wishlist, Cart, Profile Icons -->
+                    <div class="d-flex align-items-center  gap-1 gap-md-3">
+                        <!-- Wishlist -->
+                        <a href="favourite.html" class="icon-circle btn-wishlist d-none d-sm-flex">
+                            <i class="bi bi-heart"></i>
+                        </a>
+
+                        <!-- Cart Button -->
+                        <div class="cart-pill-wrapper d-flex align-items-center">
+                            <span class="cart-text d-none d-md-inline-block me-1">Cart</span>
+                            <a href="cart.html" class="icon-circle bg-white text-dark border border-dark">
+                                <i class="bi bi-bag"></i>
+                                <i class="cart-counter">0</i>
+                            </a>
+                        </div>
+
+                        <!-- User Profile -->
+                        <a href="auth.html" class="icon-circle bg-dark text-white">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+        <div class="mobile-menu-overlay" id="menuOverlay"></div>
+
+        <aside class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile-menu-header">
+                <img src="../assets/images/nav-logo.png" alt="XIV">
+
+                <button id="closeMenu" class="menu-close">
+
+                </button>
+            </div>
+
+            <nav class="mobile-nav">
+                <a href="../index.html">Home</a>
+                <a href="./product.html">Collections</a>
+                <a href="../index.html#new">New</a>
+            </nav>
+
+
+        </aside>
+
+        <main class="products-area">
+
+            <div class="breadcrumb">
+                Home / Products
+            </div>
+
+            <h1 class="products-h1">PRODUCTS</h1>
+
+
+            <!-- ==========================================
+         Search & Categories
+    =========================================== -->
+
+            <div class="top-products">
+
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input type="text" placeholder="Search">
+
+                </div>
+
+
+                <div class="categories">
+
+                    <button>NEW</button>
+                    <button>SHIRTS</button>
+                    <button>POLO SHIRTS</button>
+                    <button>SHORTS</button>
+                    <button>BEST SELLERS</button>
+                    <button>T-SHIRTS</button>
+                    <button>JEANS</button>
+                    <button>JACKETS</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==========================================
+         BEST SELLERS
+    =========================================== -->
+
+            <section class="product-section">
+
+                <h2>BEST SELLERS</h2>
+
+                <div class="product-grid" id="bestSellersGrid">
+                </div>
+
+            </section>
+
+
+            <hr>
+
+
+            <!-- ==========================================
+         NEW
+    =========================================== -->
+
+            <section class="product-section" id="new">
+
+                <h2>NEW</h2>
+
+                <div class="product-grid" id="newProductsGrid">
+                </div>
+
+            </section>
+
+
+            <hr>
+
+
+            <!-- ==========================================
+         SHIRTS
+    =========================================== -->
+
+            <section class="product-section">
+
+                <h2>SHIRTS</h2>
+
+                <div class="product-grid" id="shirtsGrid">
+                </div>
+
+            </section>
+
+
+            <hr>
+
+
+            <!-- ==========================================
+         T-SHIRTS
+    =========================================== -->
+
+            <section class="product-section">
+
+                <h2>T-SHIRTS</h2>
+
+                <div class="product-grid" id="tshirtsGrid">
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <!-- Info -->
+            <div class="footer-info">
+
+                <span>INFO</span>
+
+                <a href="checkout.html">PRICING</a>
+                <a href="about.html">ABOUT</a>
+                <a href="#">CONTACTS</a>
+
+                <div class="footer-languages">
+
+                    <span>LANGUAGES</span>
+
+                    <a href="#">ENG</a>
+                    <a href="#">ESP</a>
+                    <a href="#">SVE</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Logo -->
+            <div class="footer-brand">
+
+                <img src="../assets/images/nav-logo.png" alt="">
+
+            </div>
+
+
+
+
+
+            <!-- Communication -->
+            <div class="footer-communication">
+
+                <span>
+                    Next-field communication
+                </span>
+
+                <div></div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/product.js"></script>
+    <script src="../assets/js/sync.js"></script>
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/cartt.js"></script>
+
+    
+
+</body>
+
+</html>
