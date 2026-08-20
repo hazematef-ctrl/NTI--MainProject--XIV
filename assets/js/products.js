@@ -1,6 +1,9 @@
 // ==========================================
 // Products Data
 // ==========================================
+// ==========================================
+// Products Data (Updated with Complete Properties)
+// ==========================================
 
 const products = [
     {
@@ -8,118 +11,159 @@ const products = [
         image: "assets/images/img1.png",
         title: "White Pants",
         price: 139,
-        category: "men",
+        category: "Pants",
+        color: "White",
+        sizes: ["S", "M", "L", "XL"],
+        inStock: true,
         isNew: false,
         rating: 4.8,
         type: "pants",
+        collection: "Best Sellers",
+        tags: ["casual", "basic"],
         isBestSeller: true
     },
-
     {
         id: 2,
         image: "assets/images/img2.png",
         title: "Printed Shirt",
         price: 59,
-        category: "men",
+        category: "Shirts",
+        color: "Black",
+        sizes: ["M", "L", "XL"],
+        inStock: true,
         isNew: false,
         rating: 4.6,
         type: "shirt",
+        collection: "Best Sellers",
+        tags: ["cotton", "casual"],
         isBestSeller: true
     },
-
     {
         id: 3,
         image: "assets/images/img3.png",
         title: "Patterned Shirt",
         price: 79,
-        category: "women",
+        category: "Shirts",
+        color: "Blue",
+        sizes: ["XS", "S", "M"],
+        inStock: true,
         isNew: false,
         rating: 4.7,
         type: "shirt",
+        collection: "Best Sellers",
+        tags: ["premium"],
         isBestSeller: true
     },
-
     {
         id: 4,
         image: "assets/images/img4.png",
         title: "Basic Shirt",
         price: 19,
-        category: "men",
+        category: "Shirts",
+        color: "White",
+        sizes: ["S", "M", "L"],
+        inStock: true,
         isNew: true,
         rating: 4.3,
         type: "shirt",
+        collection: "New",
+        tags: ["basic", "cotton"],
         isBestSeller: false
     },
-
     {
         id: 5,
         image: "assets/images/img5.png",
         title: "Printed Shirt Crame",
         price: 59,
-        category: "women",
+        category: "Shirts",
+        color: "Beige",
+        sizes: ["M", "L"],
+        inStock: true,
         isNew: true,
         rating: 4.9,
         type: "shirt",
+        collection: "New",
+        tags: ["casual"],
         isBestSeller: true
     },
-
     {
         id: 6,
         image: "assets/images/img7.png",
         title: "Abstract Print Shirt",
         price: 69,
-        category: "women",
+        category: "T-Shirts",
+        color: "Grey",
+        sizes: ["S", "M", "L", "XL"],
+        inStock: true,
         isNew: true,
         rating: 4.5,
         type: "tshirt",
+        collection: "New",
+        tags: ["premium"],
         isBestSeller: false
     },
-
     {
         id: 7,
         image: "assets/images/img9.png",
         title: "Gray Pants",
         price: 79,
-        category: "men",
+        category: "Pants",
+        color: "Grey",
+        sizes: ["M", "L", "2X"],
+        inStock: false, // مثال لمنتج غير متوفر
         isNew: true,
         rating: 4.4,
         type: "pants",
+        collection: "New",
+        tags: ["casual"],
         isBestSeller: false
     },
-
     {
         id: 8,
         image: "assets/images/img10.png",
         title: "Green Pants",
         price: 49,
-        category: "men",
+        category: "Pants",
+        color: "Green",
+        sizes: ["S", "M"],
+        inStock: true,
         isNew: true,
         rating: 4.7,
         type: "pants",
+        collection: "New",
+        tags: ["basic"],
         isBestSeller: false
     },
-
     {
         id: 9,
         image: "assets/images/img12.png",
-        title: "Basic Shirt",
+        title: "Basic T-Shirt",
         price: 19,
-        category: "kids",
+        category: "T-Shirts",
+        color: "Black",
+        sizes: ["XS", "S", "M", "L"],
+        inStock: true,
         isNew: true,
         rating: 4.2,
         type: "tshirt",
+        collection: "New",
+        tags: ["cotton", "basic"],
         isBestSeller: false
     },
-
     {
         id: 10,
         image: "assets/images/img13.png",
-        title: "Summer Shirt",
+        title: "Summer T-Shirt",
         price: 89,
-        category: "women",
+        category: "T-Shirts",
+        color: "Blue",
+        sizes: ["M", "L", "XL"],
+        inStock: true,
         isNew: true,
         rating: 4.8,
         type: "tshirt",
+        collection: "Best Sellers",
+        tags: ["premium", "casual"],
         isBestSeller: true
     }
 ];

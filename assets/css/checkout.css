@@ -270,7 +270,7 @@ a
     border-radius: 10px; 
 } 
 .num {
-    padding-left: 40px;
+    padding-left: 30px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -282,7 +282,7 @@ a
 }
 .total-price-header
 {
-    padding-left: 40px;
+    padding-left: 30px;
     font-size: 30px;
     font-weight: bold;
 }
