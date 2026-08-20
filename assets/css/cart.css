@@ -219,7 +219,7 @@ a
 { 
     font-size: 40px;
     background-color: white;
-    margin-left: -20px;
+    margin-left: -30px;
     padding-right: 10px;
     padding-left: 10px;
     font-weight: bolder;
@@ -341,6 +341,26 @@ h2
         padding-left: 20px;
         margin-top: 10px;
     }
+    .size-buttons {
+    gap: 60px;
+    font-size: 32px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    }
+
+    .size-buttons label {
+        font-size: 32px;
+    }
+
+    .size-size-word {
+        font-size: 32px;
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 768px) {
@@ -367,7 +387,7 @@ h2
     }
 
     .product-image {
-        margin-left: 0;
+        margin-left: -30px;
     }
 
     .product-name {
@@ -400,6 +420,25 @@ h2
         box-sizing: border-box;
 
     }
+    .size-buttons {
+    gap: 65px;
+    font-size: 26px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 20px;
+    box-sizing: border-box;
+    }
+
+    .size-buttons label {
+        font-size: 26px;
+    }
+
+    .size-size-word {
+        font-size: 26px;
+        width: 100%;
+        margin-left: 20px;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 480px) {
@@ -420,6 +459,7 @@ h2
     }
 
     .product-image {
+        margin-left:1px;
         width: 70px;
         height: 70px;
     }
@@ -428,12 +468,43 @@ h2
         font-size: 16px;
     }
 
-    .quantity, .num {
+    .quantity{
         font-size: 24px;
-        padding: 5px 10px;
+        padding: 5px;
+    }
+
+    .num{
+        font-size: 35px;
+        padding: 5px;
     }
 
     .positive, .negative {
         font-size: 28px;
+    }
+    .size-buttons {
+    gap: 30px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+
+    .size-buttons label {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .size-size-word {
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        margin-left: 20px;
+
+    }
+    .productshr{
+        margin-left:20px;
     }
 }

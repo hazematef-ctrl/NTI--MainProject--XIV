@@ -679,6 +679,7 @@ h2
     }
 
     .product-image {
+        margin-left:20px;
         width: 70px;
         height: 70px;
     }
