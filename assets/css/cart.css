@@ -337,16 +337,16 @@ h2
     }
 
     .products-num {
-        margin-left: 0;
+        margin-left: 20px;
         padding-left: 20px;
         margin-top: 10px;
     }
     .size-buttons {
-    gap: 60px;
+    gap: 87px;
     font-size: 32px;
     width: 100%;
     max-width: 100%;
-    margin-left: 0;
+    margin-left: 30px;
     box-sizing: border-box;
     justify-content: flex-start;
     }
@@ -356,9 +356,10 @@ h2
     }
 
     .size-size-word {
+
         font-size: 32px;
         width: 100%;
-        margin-left: 0;
+        margin-left: 30px;
         box-sizing: border-box;
     }
 }
@@ -387,7 +388,7 @@ h2
     }
 
     .product-image {
-        margin-left: -30px;
+        margin-left: 30px;
     }
 
     .product-name {
@@ -421,7 +422,7 @@ h2
 
     }
     .size-buttons {
-    gap: 65px;
+    gap: 60px;
     font-size: 26px;
     width: 100%;
     max-width: 100%;
@@ -476,6 +477,7 @@ h2
     .num{
         font-size: 35px;
         padding: 5px;
+        
     }
 
     .positive, .negative {
