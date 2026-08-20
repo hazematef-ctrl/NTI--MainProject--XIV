@@ -24,7 +24,7 @@ form.addEventListener("submit", function(e) {
     message.innerHTML = "LOGIN SUCCESSFUL";
     message.className = "success";
     setTimeout(function() {
-        window.location.href = "../../index.html";
+        window.location.href = "../index.html";
     }, 1000);
 
 });
